@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Form Demo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="login-wrapper">
+            <form action="" class="form">
+                <img src="profile.png" alt="user-img" id="avatar">
+                <h2>login</h2>
+                <div class="input-group">
+                    <input type="text" name="" id="login-user" required>
+                    <label for="login-user">User Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="" id="login-password" required>
+                    <label for="login-user">User Password</label>
+                </div>
+                <input type="submit" value="login" class="submit-btm">
+                <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>
+            </form>
+            <div id="forgot-pw">
+                <form action="" class="form">
+                    <a href="#" class="close">&times;</a>
+                    <h2>Reset password</h2>
+                    <div class="input-group">
+                        <input type="email" name="" id="email" required>
+                        <label for="email">User email</label>
+                    </div>
+                    <input type="submit" value="submit" class="submit-btm">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
