@@ -1,0 +1,22 @@
+body {
+    letter-spacing: 1px;
+}
+p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+.navbar-img {
+    width: 100px;
+}
+.bold-h1 {
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+.services {
+    background: #F6F6F6;
+}
+.services h3 {
+    font-size: 0.9rem;
+}
+#our-value
