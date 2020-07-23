@@ -6,93 +6,265 @@
     <link href="teckStyle.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light d-block">
-        <div>
-            <a class="navbar-brand m-auto d-inline w-25" href="#"><h2 class="navbar-brand-text">
-                <img alt="" class="navbar-img" src="http://emptyspacetech.com/images/esblack.png">
-                Emptyspace</h2></a>
-        </div>
-        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-                data-target="#navbarNav" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-            <ul class="navbar-nav m-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#services">Services <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#bootcamp">Bootcamp<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#intership">Intership<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#contact">contact<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="row mt-4" id="home">
-        <div class="jumbotron col-lg-5 border-0 bg-white">
-            <h1 class="bold-h1">Good <br>design is <br> good <br> business.</h1>
-            <p class="font-weight-lighter">Our business solutions and services help accelerate innovation, increase
-                productivity, reduce costs, and optimize asset utilization.</p>
-        </div>
-        <img alt="" class="col-lg-7 img-thumbnail border-0" src="http://emptyspacetech.com/images/landing_1.png">
-
-    </div>
-
-
-    <div id="bootcamp"></div>
-    <div id="intership"></div>
-    <div id="contact"></div>
-</div>
-<div class="services" id="services">
     <div class="container">
-        <h2 class="py-5 text-center font-weight-bolder">Services</h2>
-        <div class="row">
-            <div class="col-3 bg-white m-auto p-4 rounded">
-                <div class="icon-div">
-                    <i></i>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white d-block">
+            <div>
+                <a class="navbar-brand m-auto d-inline w-25" href="#"><h2 class="navbar-brand-text text-center my-5">
+                    <img alt="" class="navbar-img" src="http://emptyspacetech.com/images/esblack.png">
+                    Emptyspace</h2></a>
+            </div>
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                    data-target="#navbarNav" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav m-auto nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bootcamp">Bootcamp<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intership">Intership<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact">contact<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row mt-4" id="home">
+            <div class="jumbotron col-lg-5 border-0 bg-white">
+                <h1 class="bold-h1">Good <br>design is <br> good <br> business.</h1>
+                <p class="font-weight-lighter">Our business solutions and services help accelerate innovation, increase
+                    productivity, reduce costs, and optimize asset utilization.</p>
+                <button class="green start-btn px-4 py-2 mt-5">Get started</button>
+            </div>
+            <img alt="" class="col-lg-7 img-thumbnail border-0" src="http://emptyspacetech.com/images/landing_1.png">
+
+        </div>
+
+
+        <div id="bootcamp"></div>
+        <div id="intership"></div>
+        <div id="contact"></div>
+    </div>
+    <div class="services" id="services">
+        <div class="container">
+            <h2 class="py-5 text-center font-weight-bolder">Services</h2>
+            <div class="row">
+                <div class="col-3 bg-white m-auto p-4 rounded service-item">
+                    <div class="icon-div">
+                        <span class="icon-wrap green p-2 rounded-pill text-white">
+                            <svg class="bi bi-keyboard-fill" fill="currentColor" height="1em" viewBox="0 0 16 16"
+                                 width="1em"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6zm13 .25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zM2.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 8.75v-.5A.25.25 0 0 0 2.75 8h-.5zM4 8.25A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75v-.5zM6.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 7 8.75v-.5A.25.25 0 0 0 6.75 8h-.5zM8 8.25A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75v-.5zM13.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm-3-2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-1.5zm.75 2.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zM11.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zM9 6.25A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75v-.5zM7.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 8 6.75v-.5A.25.25 0 0 0 7.75 6h-.5zM5 6.25A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75v-.5zM2.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5A.25.25 0 0 0 4 6.75v-.5A.25.25 0 0 0 3.75 6h-1.5zM2 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zM4.25 10a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h5.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-5.5z"
+                                      fill-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <h3 class="mt-4">Web Development</h3>
+                    <p>Native, Hybrid, Progressive Webplatform Development. </p>
                 </div>
-                <h3>Web Development</h3>
-                <p>Native, Hybrid, Progressive Webplatform Development. </p>
+                <div class="col-3 bg-white m-auto p-4 rounded service-item">
+                    <div class="icon-div">
+                        <span class="icon-wrap green p-2 rounded-pill text-white">
+                            <svg class="bi bi-shop-window" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.12 1.175A.5.5 0 0 1 3.5 1h9a.5.5 0 0 1 .38.175l2.759 3.219A1.5 1.5 0 0 1 16 5.37v.13h-1v-.13a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.13H0v-.13a1.5 1.5 0 0 1 .361-.976l2.76-3.22z"
+                                      fill-rule="evenodd"/>
+                                <path d="M2.375 6.875c.76 0 1.375-.616 1.375-1.375h1a1.375 1.375 0 0 0 2.75 0h1a1.375 1.375 0 0 0 2.75 0h1a1.375 1.375 0 1 0 2.75 0h1a2.375 2.375 0 0 1-4.25 1.458 2.371 2.371 0 0 1-1.875.917A2.37 2.37 0 0 1 8 6.958a2.37 2.37 0 0 1-1.875.917 2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.5h1c0 .76.616 1.375 1.375 1.375z"/>
+                                <path d="M4.75 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm3.75 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm3.75 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM2 8.854V15h12V8.854a3.354 3.354 0 0 0 1-.27V15h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V8.583c.311.14.647.232 1 .271zm0-1.008V7H1v.437c.291.207.632.35 1 .409zm13-.409c-.291.207-.632.35-1 .409V7h1v.437z"/>
+                                <path d="M4 13V9H3v4a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9h-1v4H4z"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <h3 class="mt-4">Application Modernization</h3>
+                    <p>App development : focusing on emotive, inspirational and improve mobile utilizational design.</p>
+                </div>
+                <div class="col-3 bg-white m-auto p-4 rounded service-item">
+                    <div class="icon-div">
+                        <span class="icon-wrap green p-2 rounded-pill text-white">
+                           <svg class="bi bi-bag-fill" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <h3 class="mt-4">UI/UX Design and Development</h3>
+                    <p>Rapid Visualization & Innovation Design Methodology. </p>
+                </div>
+                <div class="col-3 bg-white m-5 p-4 rounded service-item">
+                    <div class="icon-div">
+                        <span class="icon-wrap green p-2 rounded-pill text-white">
+                           <svg class="bi bi-archive-fill" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM6 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"
+                                      fill-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <h3 class="mt-4">Architecture Assessment</h3>
+                    <p>Graphic design : Human-Centric Design & Prefabricated Components</p>
+                </div>
+                <div class="col-9"></div>
             </div>
-            <div class="col-3 bg-white m-auto p-4 rounded">
-                <h3>Application Modernization</h3>
-                <p>App development : focusing on emotive, inspirational and improve mobile utilizational design.</p>
-            </div>
-            <div class="col-3 bg-white m-auto p-4 rounded">
-                <h3>UI/UX Design and Development</h3>
-                <p>Rapid Visualization & Innovation Design Methodology. </p>
-            </div>
-            <div class="col-3 bg-white m-5 p-4 rounded">
-                <h3>Architecture Assessment</h3>
-                <p>Graphic design : Human-Centric Design & Prefabricated Components</p>
-            </div>
-            <div class="col-9"></div>
         </div>
     </div>
-</div>
-<div id="our-value">
-    <div class="container">
+    <div id="our-value">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-8">
+                    <img alt="" class="img-thumbnail border-0"
+                         src="http://emptyspacetech.com/images/do_ui_kit_download_cta_floating_devices-2x.png">
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <h2 class="font-weight-bolder mb-5">Our Values</h2>
+                    <p>We believe that the softest pillow is a clear conscience. The values that drive us underscore our
+                        commitment to</p>
+                    <ul class="service-ul">
+                        <li>Client Value: To surpass client expectations consistently</li>
+                        <li>Leadership by Example: To set standards in our business and transactions and be an example for
+                            the industry and ourselves
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-4 mt-5">
+                    <ul class="service-ul">
+                        <li>Integrity and Transparency: To be ethical, sincere and open in all our transactions</li>
+                        <li>Fairness: To be objective and transaction-oriented, and thereby earn trust and respect</li>
+                        <li>Excellence: To strive relentlessly, constantly improve ourselves, our teams, our services and
+                            products to become the best we can offer
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-7 mt-5">
+                    <img alt="" class="img-thumbnail border-0"
+                         src="http://emptyspacetech.com/images/do_ui_kit_hero_floating_devices-2x.png">
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <div id="about-us">
+        <div class="container">
+            <h2 class="font-weight-bolder text-center py-5">About Us</h2>
+            <div class="row">
+                <div class="col-6">
+                    <img alt="" class="img-thumbnail border-0 about-img img-fluid"
+                         src="http://emptyspacetech.com/images/about_1.jpg">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <h2>Designing the right customer experience</h2>
+                    <p>
+                        Enterprises are being digitally transformed, producing products or services that are being consumed
+                        by their customers, partners, and employees. But, these enterprises continue to struggle with
+                        creating the right experiences for their stakeholders. At Emptyspace Technologies, our emphasis on
+                        customer-driven Application Development enables us to design the right experience for stakeholders
+                        that generates value for our clients. With deep industrial knowledge, delivery capabilities and
+                        technical expertise, we help businesses differentiate by designing a unique and seamless experience
+                        spanning product and service touchpoints.
+                    </p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-7"></div>
+                <div class="col-4">
+                    <h2>Adding value to applications and products</h2>
+                    <p>
+                        Enterprises struggle to cope up with complex systems that are inflexible to support new business
+                        initiatives. We accelerate possibilities for our clients by taking a systematic, agile approach to
+                        modernization of core assets for business agility. We also leverage cloud and modern architectures
+                        for these transformations. In these transformations, we focus on automation for cost optimization
+                        and Artificial Intelligence to make the applications/products smarter
+                    </p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="text-center font-weight-bolder py-5">Get In Touch</h2>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 bg-white p-5">
+
+                <h3 class="mb-5 font-weight-lighter">Message</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="first-name">First Name</label>
+                            <input class="form-control" id="first-name" placeholder="" type="text">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="last-name">Last Name</label>
+                            <input class="form-control" id="last-name" placeholder="" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input class="form-control" id="subject" placeholder="" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" placeholder="Write your notes or questions here..."
+                                  rows="6"></textarea>
+                    </div>
+                    <button class="green start-btn px-4 py-2 mt-4" type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4 bg-white mt-5 p-5">
+                <h3 class="mb-3">Address</h3>
+                <p>
+                    BUILDING NO : 93,<br>
+                    PERINGULAM (P.O), POONJAR,<br>
+                    KOTTAYAM (DIST), KERALA,<br>
+                    INDIA PIN : 686582br <br> <br>
+
+                    Phone : +91-9446171096br <br>
+                    Mail : <a class="email-link" href="admin@emptyspacetech.com">admin@emptyspacetech.com</a>
+                </p>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    <div id="contact-links" class="bg-white">
+        <div class="icons">
+
+        </div>
+        <div class="m-auto text-center">
+            <p>
+                Copyright©<script>document.write(new Date().getFullYear());</script>2020 All rights reserved | This template is made with
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill email-link" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+                by
+                <a href="https://colorlib.com/" class="email-link">Colorlib</a>
+            </p>
+        </div>
 
     </div>
-</div>
+</body>
 
-</div>
 <script crossorigin="anonymous"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

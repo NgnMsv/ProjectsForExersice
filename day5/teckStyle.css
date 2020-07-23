@@ -3,14 +3,14 @@ body {
 }
 p {
     font-weight: 300;
-    font-size: 0.8rem;
-    opacity: 0.6;
+    font-size: 1rem;
+    opacity: 0.5;
 }
 .navbar-img {
     width: 100px;
 }
 .bold-h1 {
-    font-weight: 100;
+    font-weight: 900;
     font-size: 3.5rem;
 }
 .services {
@@ -19,4 +19,44 @@ p {
 .services h3 {
     font-size: 0.9rem;
 }
-#our-value
+.green {
+    background: #5FD4B6;
+}
+.start-btn {
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: white;
+}
+.start-btn:hover {
+    background: white;
+    border: solid 2px #5FD4B6;
+    color: black;
+}
+#our-value {
+    background: white;
+}
+.service-ul {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+#about-us {
+    background: #F6F6F6;
+}
+.about-img {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)!important;
+}
+#get-in-touch {
+    background: #F6F6F6;
+}
+h3 {
+    opacity: 0.9;
+}
+.email-link {
+    color: #5FD4B6;
+}
+.email-link:hover {
+    color: #073e31;
+}
+
