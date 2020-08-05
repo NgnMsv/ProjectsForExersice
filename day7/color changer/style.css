@@ -1,0 +1,8 @@
+button {
+    font-weight: bold;
+    border: 5px solid cornflowerblue;
+    text-transform: uppercase;
+}
+.pink {
+    background: deeppink;
+}
