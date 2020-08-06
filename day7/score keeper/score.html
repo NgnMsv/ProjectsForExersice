@@ -3,18 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>score keeper</title>
+        <link rel="stylesheet" href="scoreStyle.css">
     </head>
     <body>
         <h1>
-            <span id="first-player">0 </span><span>to </span><span id="second-layer">0</span>
+            <span id="p1Display">0 </span><span> to </span><span id="p2Display">0</span>
         </h1>
-        <p>playing to : <span id="top-score">5</span></p>
-        <form action="">
-            <input id="top-score-setter" type="number">
-            <button id="first-player-btn">player one</button>
-            <button id="second-player-btn">player two</button>
-            <button id="reset">reset</button>
-        </form>
+        <p>playing to : <span id="winningScoreDisplay">5</span></p>
+            <input type="number">
+            <button id="p1">Player one</button>
+            <button id="p2">Player two</button>
+            <button id="reset">Reset</button>
 
         <script src="logic.js"></script>
     </body>

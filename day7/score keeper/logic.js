@@ -1,15 +1,50 @@
-const topInput = document.getElementById('top-score-setter');
-const topScore = document.getElementById('top-score');
-const firstPlayerBtn = document.getElementById('first-player-btn');
-let score1 = 0
-const firstPlayerScore = document.getElementById('first-player');
+const p1Button = document.getElementById('p1');
+const p2Button = document.querySelector('#p2');
+const h1 = document.querySelector('h1');
+const p1Display = document.querySelector('#p1Display');
+const p2Display = document.getElementById('p2Display');
+const reset = document.getElementById('reset');
+const numInput = document.querySelector('input');
+const winningScoreDisplay = document.getElementById('winningScoreDisplay');
+let p1Score = 0;
+let p2Score = 0;
+let gameOver = false;
+let winningScore = 5;
 
-topInput.addEventListener( 'change' , function () {
-    topScore.textContent = topInput.value;
+p1Button.addEventListener('click' , function () {
+    if (!gameOver){
+        p1Score++;
+        if (p1Score === winningScore){
+            gameOver = true;
+            p1Display.classList.add('winner')
+        }
+        p1Display.textContent = p1Score.toString();
+    }
 });
 
-//first player increase button
-firstPlayerBtn.addEventListener('click' , function () {
-    score1++;
-    firstPlayerScore.textContent = score1.toString();
+p2Button.addEventListener( 'click' , function () {
+    if (!gameOver) {
+        p2Score++;
+        if (p2Score === winningScore) {
+            gameOver = true;
+            p2Display.classList.add('winner');
+        }
+        p2Display.textContent = p2Score.toString();
+    }});
+
+reset.addEventListener('click' , resetGame);
+
+function resetGame() {
+    p1Score = 0 ;
+    p2Score = 0;
+    p1Display.textContent = '0';
+    p1Display.classList.remove('winner')
+    p2Display.textContent = '0';
+    p2Display.classList.remove('winner');
+    gameOver = false;
+}
+numInput.addEventListener('change' , function () {
+    resetGame();
+    winningScore = Number(this.value);
+    winningScoreDisplay.textContent = this.value;
 });
