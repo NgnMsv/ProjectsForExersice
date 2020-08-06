@@ -1,8 +1,10 @@
 var colors = generateRandomColors(6);
-var pickedColor = pickedColor();
+var pickedColor = pickColor();
 var squares = document.querySelectorAll('.square');
 var colorDisplay = document.getElementById('colorDisplay');
 var messageDisplay = document.getElementById('message');
+var h1 = document.querySelector('h1');
+var resetButton = document.getElementById('reset');
 
 colorDisplay.textContent = pickedColor;
 for (i = 0; i < squares.length; i++) {
@@ -12,12 +14,18 @@ for (i = 0; i < squares.length; i++) {
     squares[i].addEventListener('click', function () {
         //grab color of picked square
         var clickedColor = this.style.backgroundColor;
-        //compare to the pickedColor
+        //compare to the pickColor
         if (clickedColor === pickedColor) {
             //found the color
             messageDisplay.textContent = 'Correct'
             //change all of the squares color to the answer color
             changeColors(clickedColor);
+            //change h1 backgroundColor
+            h1.style.backgroundColor = clickedColor;
+            //play again button
+            resetButton.textContent = 'Play Again?'
+            //change h1 background
+            h1.style.backgroundColor = 'black'
         } else {
             //wrong choice
             this.style.backgroundColor = 'black'
@@ -31,10 +39,9 @@ function changeColors(color) {
     for (i = 0; i < squares.length; i++) {
         squares[i].style.backgroundColor = color;
     }
-    //change each color to the given color
 }
 
-function pickedColor() {
+function pickColor() {
     var random = Math.floor(Math.random()* colors.length);
     return colors[random];
 }
@@ -63,3 +70,16 @@ function randomColor() {
     return 'rgb('+r+', '+g+', '+b+')';
 
 }
+
+resetButton.addEventListener('click' , function () {
+    //generate all new colors
+    colors = generateRandomColors(6);
+    //pick a random color from array
+    pickedColor = pickColor();
+    //change colorDisplay
+    colorDisplay.textContent = pickedColor;
+    //change squares colors
+    for (i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = colors[i];
+    }
+});
