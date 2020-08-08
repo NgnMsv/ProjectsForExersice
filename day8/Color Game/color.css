@@ -1,6 +1,8 @@
 body {
     background: black;
     color: white;
+    margin: 0;
+    font-family: 'Avernir', monospace;
 }
 .square {
     width: 30%;
@@ -8,13 +10,22 @@ body {
     padding-top: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.6s;
 }
 #container {
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 600px;
 }
 h1 {
+    font-width: normal;
+    text-transform: uppercase;
     color: white;
+    text-align: center;
+    background-color: lightpink;
+    line-height: 1.1;
+    margin: 0;
+    padding: 20px 0;
 }
 #stripe {
     background-color: white;
@@ -23,5 +34,30 @@ h1 {
     color: black;
 }
 .selected {
-    background: cornflowerblue;
+    color: white;
+    background: lightpink;
+}
+#colorDisplay {
+    font-size: 150%;
+
+}
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: lightpink;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s;
+    outline: none;
+}
+#message {
+    display: inline-block;
+    width: 20%;
+}
+button:hover {
+    color: white;
+    background-color: lightpink;
 }

@@ -6,38 +6,17 @@ var colorDisplay = document.getElementById('colorDisplay');
 var messageDisplay = document.getElementById('message');
 var h1 = document.querySelector('h1');
 var resetButton = document.getElementById('reset');
-var easyBtn = document.getElementById('easyBtn');
-var hardBtn = document.getElementById('hardBtn');
+var modeButton = document.getElementsByClassName('mode');
 
-easyBtn.addEventListener('click' , function () {
-    easyBtn.classList.add('selected');
-    hardBtn.classList.remove('selected');
-    numSquares = 3;
-    colors = generateRandomColors(numSquares);
-    pickedColor = pickColor();
-    colorDisplay.textContent = pickedColor;
-    for ( i = 0; i < squares.length; i++) {
-        if (colors[i]) {
-            squares[i].style.backgroundColor = colors[i];
-        } else {
-            squares[i].style.display = 'none';
-        }
-    }
-});
-
-hardBtn.addEventListener('click' , function () {
-    hardBtn.classList.add('selected');
-    easyBtn.classList.remove('selected');
-    numSquares = 6;
-    colors = generateRandomColors(numSquares);
-    pickedColor = pickColor();
-    colorDisplay.textContent = pickedColor;
-    for ( i = 0; i < squares.length; i++) {
-            squares[i].style.backgroundColor = colors[i];
-            squares[i].style.display = 'block';
-
-    }
-});
+for (i = 0; i < modeButton.length; i++) {
+    modeButton[i].addEventListener('click' , function () {
+        modeButton[0].classList.remove('selected');
+        modeButton[1].classList.remove('selected');
+        this.classList.add('selected');
+        this.textContent === 'Easy' ? numSquares = 3 : numSquares = 6;
+        reset();
+    });
+}
 
 colorDisplay.textContent = pickedColor;
 for (i = 0; i < squares.length; i++) {
@@ -103,14 +82,25 @@ function randomColor() {
 }
 
 resetButton.addEventListener('click' , function () {
-    //generate all new colors
+    this.textContent = 'New Colors'
+    reset();
+});
+function reset(){
     colors = generateRandomColors(numSquares);
     //pick a random color from array
     pickedColor = pickColor();
     //change colorDisplay
     colorDisplay.textContent = pickedColor;
+    messageDisplay.textContent = '';
     //change squares colors
     for (i = 0; i < squares.length; i++) {
-        squares[i].style.backgroundColor = colors[i];
+        if (colors[i]) {
+            squares[i].style.display = 'block';
+            squares[i].style.backgroundColor = colors[i];
+        } else {
+            squares[i].style.display = 'none';
+        }
     }
-});
+    //change h1 backgroundColor
+    h1.style.backgroundColor = 'lightpink'
+}
