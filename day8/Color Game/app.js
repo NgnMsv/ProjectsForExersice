@@ -1,10 +1,43 @@
-var colors = generateRandomColors(6);
+var numSquares = 6;
+var colors = generateRandomColors(numSquares);
 var pickedColor = pickColor();
 var squares = document.querySelectorAll('.square');
 var colorDisplay = document.getElementById('colorDisplay');
 var messageDisplay = document.getElementById('message');
 var h1 = document.querySelector('h1');
 var resetButton = document.getElementById('reset');
+var easyBtn = document.getElementById('easyBtn');
+var hardBtn = document.getElementById('hardBtn');
+
+easyBtn.addEventListener('click' , function () {
+    easyBtn.classList.add('selected');
+    hardBtn.classList.remove('selected');
+    numSquares = 3;
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    for ( i = 0; i < squares.length; i++) {
+        if (colors[i]) {
+            squares[i].style.backgroundColor = colors[i];
+        } else {
+            squares[i].style.display = 'none';
+        }
+    }
+});
+
+hardBtn.addEventListener('click' , function () {
+    hardBtn.classList.add('selected');
+    easyBtn.classList.remove('selected');
+    numSquares = 6;
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    for ( i = 0; i < squares.length; i++) {
+            squares[i].style.backgroundColor = colors[i];
+            squares[i].style.display = 'block';
+
+    }
+});
 
 colorDisplay.textContent = pickedColor;
 for (i = 0; i < squares.length; i++) {
@@ -20,12 +53,10 @@ for (i = 0; i < squares.length; i++) {
             messageDisplay.textContent = 'Correct'
             //change all of the squares color to the answer color
             changeColors(clickedColor);
-            //change h1 backgroundColor
+            //change heading backgroundColor
             h1.style.backgroundColor = clickedColor;
             //play again button
             resetButton.textContent = 'Play Again?'
-            //change h1 background
-            h1.style.backgroundColor = 'black'
         } else {
             //wrong choice
             this.style.backgroundColor = 'black'
@@ -73,7 +104,7 @@ function randomColor() {
 
 resetButton.addEventListener('click' , function () {
     //generate all new colors
-    colors = generateRandomColors(6);
+    colors = generateRandomColors(numSquares);
     //pick a random color from array
     pickedColor = pickColor();
     //change colorDisplay
